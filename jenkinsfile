@@ -1,5 +1,5 @@
 pipeline{
-agent any
+agent {label ‘maven_build_server’}
 stages 
 {
 stage('Build') 

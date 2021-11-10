@@ -1,26 +1,26 @@
 pipeline{
-agent {maven_build_server}
+node ('maven_build_server')
 stages 
 {
 stage('Build') 
 {
 steps{
 echo "Building the Code.........."
-mvn clean
+sh mvn clean
 }
 }
 stage('Test') 
 {
 steps{
 echo "Testing the Code.........."
-mvn test
+sh mvn test
 }
 }
 stage('Compile') 
 {
 steps{
 echo "Compiling the Project.........."
-mvn compile
+sh mvn compile
 }
 }
 stage('Deploy') 

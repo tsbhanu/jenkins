@@ -1,5 +1,6 @@
 pipeline{
-agent {node{label ‘maven_build_server’}}
+agent {
+label ‘maven_build_server’
 stages 
 {
 stage('Build') 
@@ -31,4 +32,4 @@ echo "Deploying the Project.........."
 }
 }
 }
-
+}

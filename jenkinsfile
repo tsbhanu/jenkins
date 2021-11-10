@@ -3,7 +3,7 @@ agent {
 label 'maven_build_server'
 }
  tools {
-        maven 'maven_3.8.3'
+        maven 'Maven_3.8.3'
     }
 stages 
 {

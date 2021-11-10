@@ -1,6 +1,6 @@
 pipeline{
 agent {
-label ‘maven_build_server’
+label 'maven_build_server'
 }
 stages 
 {
